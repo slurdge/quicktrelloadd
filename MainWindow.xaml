@@ -4,6 +4,20 @@
         Title="Add to Trello" Height="514" Width="525" Icon="pack://application:,,,/Resources/trello-mark-blue.ico">
     <Window.Resources>
         <RoutedUICommand x:Key="AddTask" Text="Add task" />
+        <Style TargetType="ToggleButton" x:Key="FlatButtonStyle">
+            <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ToggleButton">
+                    <Border BorderThickness="0"
+                            Background="{TemplateBinding Background}"
+                            CornerRadius="10"
+                            Margin="2">
+            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Border>
+            </ControlTemplate>
+            </Setter.Value>
+            </Setter>
+        </Style>
     </Window.Resources>
     <Window.CommandBindings>
         <CommandBinding Command="{StaticResource AddTask}" Executed="AddTask" />
@@ -40,7 +54,6 @@
         <Button Content="Add" Height="42" Margin="0,0,10,13" VerticalAlignment="Bottom" IsDefault="True" FontWeight="Bold" FontSize="16" HorizontalAlignment="Right" Width="233" TabIndex="2" Command="{StaticResource AddTask}" Grid.Column="1" Background="#FF34A0EA" Grid.Row="1"/>
         <Button Content="Cancel" Height="42" Margin="10,0,0,13" VerticalAlignment="Bottom" IsCancel="True" FontSize="16" FontWeight="Bold" HorizontalAlignment="Left" Width="233" IsTabStop="False" Grid.Row="1"/>
         <UniformGrid x:Name="LabelStackPanel" Grid.ColumnSpan="2" Height="106" Margin="10,0,10,60" VerticalAlignment="Bottom" Rows="2" Grid.Row="1"/>
-
 
     </Grid>
 

@@ -74,13 +74,15 @@ namespace QuickTrelloAdd
                 newBtn.Content = label.Name;
                 newBtn.Name = "Button" + i.ToString();
                 ++i;
-                
 
+                newBtn.Foreground = Brushes.White;
+                newBtn.FontWeight = FontWeights.Bold;
                 newBtn.Margin = new Thickness(0, 10, 0, 0);
                 newBtn.Background = new SolidColorBrush(colors[label.Color.GetValueOrDefault()]);
                 newBtn.Checked += new RoutedEventHandler(label_Checked);
                 newBtn.Unchecked += new RoutedEventHandler(label_Unchecked);
                 newBtn.Tag = label;
+                newBtn.Style = (Style)this.Resources["FlatButtonStyle"];
                 this.LabelStackPanel.Children.Add(newBtn);
             }
         }
