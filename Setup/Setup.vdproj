@@ -15,44 +15,104 @@
     {
         "Entry"
         {
+        "MsmKey" = "8:_10030DAD142130263D88ACA41DC76E3D"
+        "OwnerKey" = "8:_2322C418392D413388B387834A58BB30"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_10030DAD142130263D88ACA41DC76E3D"
+        "OwnerKey" = "8:_8F2B17A01ABD8BEF9839A3C102151FEE"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_10030DAD142130263D88ACA41DC76E3D"
+        "OwnerKey" = "8:_CA5BB767A4757F4664E9E1449F306D18"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_10D56894B24D081DD11950F96F9F4A6C"
+        "OwnerKey" = "8:_2322C418392D413388B387834A58BB30"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_22216CC3C2830CEB46EEDAFACB880981"
+        "OwnerKey" = "8:_2322C418392D413388B387834A58BB30"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_2322C418392D413388B387834A58BB30"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_47D586158E503EA1BDE80D8334C0BD01"
+        "MsmKey" = "8:_35B634D4CF82ECE23B0D70E3BA3B0EBC"
         "OwnerKey" = "8:_2322C418392D413388B387834A58BB30"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_47D586158E503EA1BDE80D8334C0BD01"
-        "OwnerKey" = "8:_A6AAB422C9CB7D286CF06A41F4C3468D"
+        "MsmKey" = "8:_35B634D4CF82ECE23B0D70E3BA3B0EBC"
+        "OwnerKey" = "8:_CA5BB767A4757F4664E9E1449F306D18"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_A6AAB422C9CB7D286CF06A41F4C3468D"
+        "MsmKey" = "8:_8F2B17A01ABD8BEF9839A3C102151FEE"
         "OwnerKey" = "8:_2322C418392D413388B387834A58BB30"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_A7194A10E2D15EA2B5BE0EA757B4140F"
+        "MsmKey" = "8:_9AB0920E08285A13520D31A97C43BC6F"
+        "OwnerKey" = "8:_35B634D4CF82ECE23B0D70E3BA3B0EBC"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_9AB0920E08285A13520D31A97C43BC6F"
         "OwnerKey" = "8:_2322C418392D413388B387834A58BB30"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_F0230C10E69C929026A76BBB449E0E39"
+        "MsmKey" = "8:_9E2002BCC75EB258AB615B388FEC3E86"
         "OwnerKey" = "8:_2322C418392D413388B387834A58BB30"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_F0230C10E69C929026A76BBB449E0E39"
-        "OwnerKey" = "8:_A7194A10E2D15EA2B5BE0EA757B4140F"
+        "MsmKey" = "8:_9E2002BCC75EB258AB615B388FEC3E86"
+        "OwnerKey" = "8:_22216CC3C2830CEB46EEDAFACB880981"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_AC397459A5CFAF5CA6672C3AA220B7E9"
+        "OwnerKey" = "8:_8F2B17A01ABD8BEF9839A3C102151FEE"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_AC397459A5CFAF5CA6672C3AA220B7E9"
+        "OwnerKey" = "8:_2322C418392D413388B387834A58BB30"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_CA5BB767A4757F4664E9E1449F306D18"
+        "OwnerKey" = "8:_2322C418392D413388B387834A58BB30"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_E839497BD0AB83B1054C9A8A88A3A8D9"
+        "OwnerKey" = "8:_2322C418392D413388B387834A58BB30"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -64,25 +124,61 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_A7194A10E2D15EA2B5BE0EA757B4140F"
+        "OwnerKey" = "8:_10D56894B24D081DD11950F96F9F4A6C"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_F0230C10E69C929026A76BBB449E0E39"
+        "OwnerKey" = "8:_E839497BD0AB83B1054C9A8A88A3A8D9"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_A6AAB422C9CB7D286CF06A41F4C3468D"
+        "OwnerKey" = "8:_AC397459A5CFAF5CA6672C3AA220B7E9"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_47D586158E503EA1BDE80D8334C0BD01"
+        "OwnerKey" = "8:_8F2B17A01ABD8BEF9839A3C102151FEE"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_CA5BB767A4757F4664E9E1449F306D18"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_10030DAD142130263D88ACA41DC76E3D"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_9AB0920E08285A13520D31A97C43BC6F"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_35B634D4CF82ECE23B0D70E3BA3B0EBC"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_22216CC3C2830CEB46EEDAFACB880981"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_9E2002BCC75EB258AB615B388FEC3E86"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -110,6 +206,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.5"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.5 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.5"
+                    }
+                }
             }
         }
         "Release"
@@ -134,6 +238,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.5"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.5 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.5"
+                    }
+                }
             }
         }
     }
@@ -164,20 +276,20 @@
         }
         "File"
         {
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_47D586158E503EA1BDE80D8334C0BD01"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_10030DAD142130263D88ACA41DC76E3D"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:NHotkey, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:Manatee.Trello, Version=0.0.0.0, Culture=neutral, PublicKeyToken=f502fcc17fc907d6, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_47D586158E503EA1BDE80D8334C0BD01"
+                    "_10030DAD142130263D88ACA41DC76E3D"
                     {
-                    "Name" = "8:NHotkey.dll"
+                    "Name" = "8:Manatee.Trello.dll"
                     "Attributes" = "3:512"
                     }
                 }
-            "SourcePath" = "8:NHotkey.dll"
+            "SourcePath" = "8:Manatee.Trello.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_7C2CFCD4BF2A4193A8E9A28BAD758281"
@@ -195,14 +307,45 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_A6AAB422C9CB7D286CF06A41F4C3468D"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_10D56894B24D081DD11950F96F9F4A6C"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_10D56894B24D081DD11950F96F9F4A6C"
+                    {
+                    "Name" = "8:Newtonsoft.Json.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:Newtonsoft.Json.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_7C2CFCD4BF2A4193A8E9A28BAD758281"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_22216CC3C2830CEB46EEDAFACB880981"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
             "AssemblyAsmDisplayName" = "8:NHotkey.Wpf, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_A6AAB422C9CB7D286CF06A41F4C3468D"
+                    "_22216CC3C2830CEB46EEDAFACB880981"
                     {
                     "Name" = "8:NHotkey.Wpf.dll"
                     "Attributes" = "3:512"
@@ -226,20 +369,20 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_A7194A10E2D15EA2B5BE0EA757B4140F"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_35B634D4CF82ECE23B0D70E3BA3B0EBC"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:TrelloNet, Version=0.7.2.1, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:Manatee.Json, Version=4.0.0.0, Culture=neutral, PublicKeyToken=c267f67a39449c62, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_A7194A10E2D15EA2B5BE0EA757B4140F"
+                    "_35B634D4CF82ECE23B0D70E3BA3B0EBC"
                     {
-                    "Name" = "8:TrelloNet.dll"
+                    "Name" = "8:Manatee.Json.dll"
                     "Attributes" = "3:512"
                     }
                 }
-            "SourcePath" = "8:TrelloNet.dll"
+            "SourcePath" = "8:Manatee.Json.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_7C2CFCD4BF2A4193A8E9A28BAD758281"
@@ -257,20 +400,175 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_F0230C10E69C929026A76BBB449E0E39"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_8F2B17A01ABD8BEF9839A3C102151FEE"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:Manatee.Trello.RestSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=783b036be1eaf5a7, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_F0230C10E69C929026A76BBB449E0E39"
+                    "_8F2B17A01ABD8BEF9839A3C102151FEE"
                     {
-                    "Name" = "8:Newtonsoft.Json.dll"
+                    "Name" = "8:Manatee.Trello.RestSharp.dll"
                     "Attributes" = "3:512"
                     }
                 }
-            "SourcePath" = "8:Newtonsoft.Json.dll"
+            "SourcePath" = "8:Manatee.Trello.RestSharp.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_7C2CFCD4BF2A4193A8E9A28BAD758281"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_9AB0920E08285A13520D31A97C43BC6F"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:Manatee.StateMachine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=15909d91027a225e, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_9AB0920E08285A13520D31A97C43BC6F"
+                    {
+                    "Name" = "8:Manatee.StateMachine.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:Manatee.StateMachine.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_7C2CFCD4BF2A4193A8E9A28BAD758281"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_9E2002BCC75EB258AB615B388FEC3E86"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:NHotkey, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_9E2002BCC75EB258AB615B388FEC3E86"
+                    {
+                    "Name" = "8:NHotkey.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:NHotkey.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_7C2CFCD4BF2A4193A8E9A28BAD758281"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_AC397459A5CFAF5CA6672C3AA220B7E9"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:RestSharp, Version=100.0.0.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_AC397459A5CFAF5CA6672C3AA220B7E9"
+                    {
+                    "Name" = "8:RestSharp.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:RestSharp.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_7C2CFCD4BF2A4193A8E9A28BAD758281"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_CA5BB767A4757F4664E9E1449F306D18"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:Manatee.Trello.ManateeJson, Version=0.0.0.0, Culture=neutral, PublicKeyToken=fbb8336f4f768592, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_CA5BB767A4757F4664E9E1449F306D18"
+                    {
+                    "Name" = "8:Manatee.Trello.ManateeJson.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:Manatee.Trello.ManateeJson.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_7C2CFCD4BF2A4193A8E9A28BAD758281"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_E839497BD0AB83B1054C9A8A88A3A8D9"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:FirstFloor.ModernUI, Version=1.0.9.0, Culture=neutral, PublicKeyToken=bc9b0c37bf06c6a9, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_E839497BD0AB83B1054C9A8A88A3A8D9"
+                    {
+                    "Name" = "8:FirstFloor.ModernUI.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:FirstFloor.ModernUI.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_7C2CFCD4BF2A4193A8E9A28BAD758281"
@@ -356,7 +654,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:QuickTrelloAdd"
         "ProductCode" = "8:{2A50F602-5002-4C25-AD6F-50F52BD7B44A}"
-        "PackageCode" = "8:{D6DE9C35-9BEE-425A-BE1A-D7981A2E0AEB}"
+        "PackageCode" = "8:{764DDBC1-340C-43F8-BD08-EBA2076F891D}"
         "UpgradeCode" = "8:{6DC3A571-8956-443A-AFAC-7A26F0273095}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -367,7 +665,7 @@
         "Manufacturer" = "8:QuickTrelloAdd"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
-        "Title" = "8:Setup"
+        "Title" = "8:QuickTrelloAdd-Setup"
         "Subject" = "8:"
         "ARPCONTACT" = "8:Slurdge"
         "Keywords" = "8:"
@@ -377,7 +675,7 @@
         "ARPIconIndex" = "3:32512"
         "SearchPath" = "8:"
         "UseSystemSearchPath" = "11:TRUE"
-        "TargetPlatform" = "3:0"
+        "TargetPlatform" = "3:1"
         "PreBuildEvent" = "8:"
         "PostBuildEvent" = "8:"
         "RunPostBuildEvent" = "3:0"
@@ -905,7 +1203,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_2322C418392D413388B387834A58BB30"
             {
-            "SourcePath" = "8:..\\obj\\Debug\\QuickTrelloAdd.exe"
+            "SourcePath" = "8:..\\obj\\Release\\QuickTrelloAdd.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_7C2CFCD4BF2A4193A8E9A28BAD758281"
