@@ -86,9 +86,21 @@ namespace QuickTrelloAdd
             items.Add(new System.Windows.Forms.MenuItem("-"));
             items.Add(new System.Windows.Forms.MenuItem("Quit", new EventHandler(onQuit)));
             notifyIcon.ContextMenu = new System.Windows.Forms.ContextMenu(items.ToArray());
+            var defaultShortcut = "Control+Alt+Add";
+            var stringkeys = defaultShortcut.Split('+');
+            System.Windows.Input.ModifierKeys mod = System.Windows.Input.ModifierKeys.None;
+            System.Windows.Input.Key key = System.Windows.Input.Key.None;
+            foreach (var stringkey in stringkeys)
+            {
+                System.Windows.Input.ModifierKeys currentModifier;
+                var ismod = Enum.TryParse(stringkey, out currentModifier);
+                if (ismod)
+                    mod |= currentModifier;
+                Enum.TryParse(stringkey, out key);
+            }
             try
             {
-                HotkeyManager.Current.AddOrReplace("AddTask", System.Windows.Input.Key.Add, System.Windows.Input.ModifierKeys.Control | System.Windows.Input.ModifierKeys.Alt, new EventHandler<NHotkey.HotkeyEventArgs>(showMainTrello));
+                HotkeyManager.Current.AddOrReplace("AddTask", key, mod, new EventHandler<NHotkey.HotkeyEventArgs>(showMainTrello));
             }
             catch (NHotkey.HotkeyAlreadyRegisteredException )
             {
