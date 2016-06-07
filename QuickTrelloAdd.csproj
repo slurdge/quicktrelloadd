@@ -135,11 +135,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="AuthWindow.xaml.cs">
-      <DependentUpon>AuthWindow.xaml</DependentUpon>
+    <Compile Include="OptionWindow.xaml.cs">
+      <DependentUpon>OptionWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Settings.cs" />
-    <Page Include="AuthWindow.xaml">
+    <Page Include="OptionWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

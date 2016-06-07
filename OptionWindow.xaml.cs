@@ -17,16 +17,16 @@ using System.ComponentModel;
 namespace QuickTrelloAdd
 {
     /// <summary>
-    /// Interaction logic for AuthWindow.xaml
+    /// Interaction logic for OptionWindow.xaml
     /// </summary>
-    public partial class AuthWindow : Window
+    public partial class OptionWindow : Window
     {
         public String AuthURI {get; set;}
         public String AuthToken { get; set; }
+        public String KeyboardShortcut { get; set; }
         
-        public AuthWindow()
+        public OptionWindow()
         {
-            AuthURI = "";
             InitializeComponent();
             DataContext = this;
         }

@@ -31,6 +31,26 @@ namespace QuickTrelloAdd
             return string.Format("https://trello.com/1/authorize?key={0}&name={1}&expiration=never&response_type=token&scope=read,write", key, name);
         }
 
+        protected bool showOptionWindow()
+        {
+            var uri = getAuthURL(QuickTrelloAdd.Properties.Resources.API_KEY, App.ResourceAssembly.GetName().Name);
+
+            var authform = new OptionWindow();
+            authform.AuthToken = QuickTrelloAdd.Properties.Settings.Default.TrelloAuthToken;
+            authform.KeyboardShortcut = QuickTrelloAdd.Properties.Settings.Default.KeyboardShortcut;
+            authform.AuthURI = uri.ToString();
+            authform.ShowDialog();
+            if (authform.DialogResult == false || authform.AuthToken == null || authform.AuthToken.Trim() == "")
+            {
+                return false;
+            }
+            QuickTrelloAdd.Properties.Settings.Default.KeyboardShortcut = authform.KeyboardShortcut;
+            QuickTrelloAdd.Properties.Settings.Default.TrelloAuthToken = authform.AuthToken.Trim();
+            QuickTrelloAdd.Properties.Settings.Default.Save();
+
+            return true;
+        }
+
         protected override void OnStartup(StartupEventArgs e)
         {
             var serializer = new ManateeSerializer();
@@ -41,18 +61,11 @@ namespace QuickTrelloAdd
 
             if (QuickTrelloAdd.Properties.Settings.Default.TrelloAuthToken == "")
             {
-                var uri = getAuthURL(QuickTrelloAdd.Properties.Resources.API_KEY, App.ResourceAssembly.GetName().Name);
-
-                var authform = new AuthWindow();
-                authform.AuthURI = uri.ToString();
-                authform.ShowDialog();
-                if (authform.DialogResult == false || authform.AuthToken == null || authform.AuthToken.Trim() == "")
+                if (!showOptionWindow())
                 {
                     Current.Shutdown();
                     return;
                 }
-                QuickTrelloAdd.Properties.Settings.Default.TrelloAuthToken = authform.AuthToken.Trim();
-                QuickTrelloAdd.Properties.Settings.Default.Save();
             }
             TrelloAuthorization.Default.AppKey = QuickTrelloAdd.Properties.Resources.API_KEY;
             TrelloAuthorization.Default.UserToken = QuickTrelloAdd.Properties.Settings.Default.TrelloAuthToken;
@@ -63,7 +76,7 @@ namespace QuickTrelloAdd
             List<System.Windows.Forms.MenuItem> items = new List<System.Windows.Forms.MenuItem>();
 
             boards = Me.Me.Boards.Where(x => (x.IsClosed == false));
-          
+
             foreach (var board in boards)
             {
                 var mi = new System.Windows.Forms.MenuItem(board.Name, new EventHandler(onBoardClick));
@@ -76,18 +89,23 @@ namespace QuickTrelloAdd
                 items.Add(mi);
             }
             if (currentBoard == null)
-            { 
+            {
                 currentBoard = boards.First();
                 items.First().Checked = true;
             }
-            
+
             items.Add(new System.Windows.Forms.MenuItem("-"));
             items.Add(new System.Windows.Forms.MenuItem("Create task", new EventHandler(showMainTrello)));
             items.Add(new System.Windows.Forms.MenuItem("-"));
+            items.Add(new System.Windows.Forms.MenuItem("Options", new EventHandler(onOptions)));
             items.Add(new System.Windows.Forms.MenuItem("Quit", new EventHandler(onQuit)));
             notifyIcon.ContextMenu = new System.Windows.Forms.ContextMenu(items.ToArray());
-            var defaultShortcut = "Control+Alt+Add";
-            var stringkeys = defaultShortcut.Split('+');
+            registerHotkey();
+        }
+
+        private void registerHotkey()
+        {
+            var stringkeys = QuickTrelloAdd.Properties.Settings.Default.KeyboardShortcut.Split('+');
             System.Windows.Input.ModifierKeys mod = System.Windows.Input.ModifierKeys.None;
             System.Windows.Input.Key key = System.Windows.Input.Key.None;
             foreach (var stringkey in stringkeys)
@@ -102,9 +120,15 @@ namespace QuickTrelloAdd
             {
                 HotkeyManager.Current.AddOrReplace("AddTask", key, mod, new EventHandler<NHotkey.HotkeyEventArgs>(showMainTrello));
             }
-            catch (NHotkey.HotkeyAlreadyRegisteredException )
+            catch (NHotkey.HotkeyAlreadyRegisteredException)
             {
             }
+        }
+
+        private void onOptions(object sender, EventArgs e)
+        {
+            showOptionWindow();
+            registerHotkey();
         }
 
         private void onQuit(object sender, EventArgs e)

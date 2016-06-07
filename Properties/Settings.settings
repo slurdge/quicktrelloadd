@@ -8,5 +8,8 @@
     <Setting Name="BoardId" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
+    <Setting Name="KeyboardShorcut" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Control+Alt+Add</Value>
+    </Setting>
   </Settings>
 </SettingsFile>
