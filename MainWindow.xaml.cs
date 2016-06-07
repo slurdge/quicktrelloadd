@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using TrelloNet;
+using Manatee.Trello;
 
 namespace QuickTrelloAdd
 {
@@ -22,25 +22,24 @@ namespace QuickTrelloAdd
     public partial class MainWindow : Window
     {
 
-        public List<TrelloNet.Board> boards;
-        public TrelloNet.Board currentBoard;
-        public TrelloNet.Trello trello;
+        public IEnumerable<Board> boards;
+        public Board currentBoard;
 
-        Dictionary<TrelloNet.Color, System.Windows.Media.Color> colors;
+        Dictionary<Manatee.Trello.LabelColor, System.Windows.Media.Color> colors;
 
         public MainWindow()
         {
-            colors = new Dictionary<TrelloNet.Color, System.Windows.Media.Color>() {
-                { TrelloNet.Color.Green, (System.Windows.Media.Color)ColorConverter.ConvertFromString("#61BD4F")},
-                { TrelloNet.Color.Yellow, (System.Windows.Media.Color)ColorConverter.ConvertFromString("#F2D600")},
-                { TrelloNet.Color.Orange, (System.Windows.Media.Color)ColorConverter.ConvertFromString("#FFAB4A")},
-                { TrelloNet.Color.Red, (System.Windows.Media.Color)ColorConverter.ConvertFromString("#EB5A46")},
-                { TrelloNet.Color.Purple, (System.Windows.Media.Color)ColorConverter.ConvertFromString("#C377E0")},
-                { TrelloNet.Color.Blue, (System.Windows.Media.Color)ColorConverter.ConvertFromString("#0079BF")},
-                { TrelloNet.Color.Sky, (System.Windows.Media.Color)ColorConverter.ConvertFromString("#00C2E0")},
-                { TrelloNet.Color.Lime, (System.Windows.Media.Color)ColorConverter.ConvertFromString("#51E898")},
-                { TrelloNet.Color.Pink, (System.Windows.Media.Color)ColorConverter.ConvertFromString("#FF80CE")},
-                { TrelloNet.Color.Black, (System.Windows.Media.Color)ColorConverter.ConvertFromString("#000000")}
+            colors = new Dictionary<Manatee.Trello.LabelColor, System.Windows.Media.Color>() {
+                { Manatee.Trello.LabelColor.Green, (System.Windows.Media.Color)ColorConverter.ConvertFromString("#61BD4F")},
+                { Manatee.Trello.LabelColor.Yellow, (System.Windows.Media.Color)ColorConverter.ConvertFromString("#F2D600")},
+                { Manatee.Trello.LabelColor.Orange, (System.Windows.Media.Color)ColorConverter.ConvertFromString("#FFAB4A")},
+                { Manatee.Trello.LabelColor.Red, (System.Windows.Media.Color)ColorConverter.ConvertFromString("#EB5A46")},
+                { Manatee.Trello.LabelColor.Purple, (System.Windows.Media.Color)ColorConverter.ConvertFromString("#C377E0")},
+                { Manatee.Trello.LabelColor.Blue, (System.Windows.Media.Color)ColorConverter.ConvertFromString("#0079BF")},
+                { Manatee.Trello.LabelColor.Sky, (System.Windows.Media.Color)ColorConverter.ConvertFromString("#00C2E0")},
+                { Manatee.Trello.LabelColor.Lime, (System.Windows.Media.Color)ColorConverter.ConvertFromString("#51E898")},
+                { Manatee.Trello.LabelColor.Pink, (System.Windows.Media.Color)ColorConverter.ConvertFromString("#FF80CE")},
+                { Manatee.Trello.LabelColor.Black, (System.Windows.Media.Color)ColorConverter.ConvertFromString("#000000")}
             };
 
             InitializeComponent();
@@ -50,7 +49,7 @@ namespace QuickTrelloAdd
         void MainWindow_Loaded(object sender, RoutedEventArgs e)
         {
             ListBoxItem selectItem = null;
-            foreach (var board in boards)
+            foreach (var board in boards.Where(x => (x.IsClosed == false)))
             {
                 var item = new ListBoxItem();
                 item.Content = board.Name;
@@ -67,19 +66,21 @@ namespace QuickTrelloAdd
 
         private void refreshLabels()
         {
-            this.LabelStackPanel.Children.RemoveRange(0, colors.Keys.Count);
-            foreach (var color in colors.Keys)
+            this.LabelStackPanel.Children.Clear();
+            int i = 0;
+            foreach (var label in currentBoard.Labels.Where(l => l.Color != null).OrderBy((l => l.Color.GetValueOrDefault())))
             {
                 var newBtn = new System.Windows.Controls.Primitives.ToggleButton();
-                newBtn.Content = currentBoard.LabelNames[color];
-                newBtn.Name = "Button" + color.ToString();
+                newBtn.Content = label.Name;
+                newBtn.Name = "Button" + i.ToString();
+                ++i;
                 
 
                 newBtn.Margin = new Thickness(0, 10, 0, 0);
-                newBtn.Background = new SolidColorBrush(colors[color]);
+                newBtn.Background = new SolidColorBrush(colors[label.Color.GetValueOrDefault()]);
                 newBtn.Checked += new RoutedEventHandler(label_Checked);
                 newBtn.Unchecked += new RoutedEventHandler(label_Unchecked);
-                newBtn.Tag = color;
+                newBtn.Tag = label;
                 this.LabelStackPanel.Children.Add(newBtn);
             }
         }
@@ -87,13 +88,13 @@ namespace QuickTrelloAdd
         private void label_Unchecked(object sender, RoutedEventArgs e)
         {
             var t = sender as System.Windows.Controls.Primitives.ToggleButton;
-            t.Content = currentBoard.LabelNames[(TrelloNet.Color) t.Tag];
+            t.Content = ((Manatee.Trello.Label)t.Tag).Name;
         }
 
         private void label_Checked(object sender, RoutedEventArgs e)
         {
             var t = sender as System.Windows.Controls.Primitives.ToggleButton;
-            t.Content = "✓ " + currentBoard.LabelNames[(TrelloNet.Color)t.Tag];
+            t.Content = "✓ " + ((Manatee.Trello.Label)t.Tag).Name;
         }
 
         public void AddTask(Object sender, ExecutedRoutedEventArgs e)
@@ -101,14 +102,15 @@ namespace QuickTrelloAdd
             this.Hide();
             if (this.TitleTextBox.Text.Length == 0)
                 return;
-            var lists = trello.Lists.ForBoard(new BoardId(((this.BoardsList.SelectedItem as ListBoxItem).Tag as TrelloNet.Board).GetBoardId()));
-            var newCard = trello.Cards.Add(new NewCard(this.TitleTextBox.Text, lists.First()));
-            newCard.Desc = DescTextBox.Text;
+            var board = (this.BoardsList.SelectedItem as ListBoxItem).Tag as Board;
+            var lists = board.Lists;
+            var newCard = lists.First().Cards.Add(this.TitleTextBox.Text);
+            newCard.Description = DescTextBox.Text;
             foreach (System.Windows.Controls.Primitives.ToggleButton button in this.LabelStackPanel.Children)
             {
                 if (button.IsChecked == true)
                 {
-                    trello.Cards.AddLabel(newCard, (TrelloNet.Color)button.Tag);
+                    newCard.Labels.Add(((Manatee.Trello.Label)button.Tag));
                 }
             }
             this.Close();
@@ -118,7 +120,7 @@ namespace QuickTrelloAdd
         {
             var cb = sender as ComboBox;
             var li = cb.SelectedItem as ListBoxItem;
-            currentBoard = li.Tag as TrelloNet.Board;
+            currentBoard = li.Tag as Board;
             refreshLabels();
         }
 

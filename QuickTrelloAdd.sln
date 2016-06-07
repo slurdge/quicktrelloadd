@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickTrelloAdd", "QuickTrelloAdd.csproj", "{C36B7926-F76C-4342-82E2-491160DF3F8E}"
 EndProject
@@ -18,7 +18,6 @@ Global
 		{C36B7926-F76C-4342-82E2-491160DF3F8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C36B7926-F76C-4342-82E2-491160DF3F8E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A8BD9DCF-5F96-4F0B-827A-45217446D539}.Debug|Any CPU.ActiveCfg = Debug
-		{A8BD9DCF-5F96-4F0B-827A-45217446D539}.Debug|Any CPU.Build.0 = Debug
 		{A8BD9DCF-5F96-4F0B-827A-45217446D539}.Release|Any CPU.ActiveCfg = Release
 		{A8BD9DCF-5F96-4F0B-827A-45217446D539}.Release|Any CPU.Build.0 = Release
 	EndGlobalSection
