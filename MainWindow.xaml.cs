@@ -14,7 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Manatee.Trello;
 
-namespace QuickTrelloAdd
+namespace AddToTrello
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

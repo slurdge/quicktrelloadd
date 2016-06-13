@@ -1,7 +1,7 @@
 ﻿<Window
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:local="clr-namespace:QuickTrelloAdd" x:Name="Trello" x:Class="QuickTrelloAdd.OptionWindow"
+        xmlns:local="clr-namespace:AddToTrello" x:Name="Trello" x:Class="AddToTrello.OptionWindow"
         Title="Trello" Height="279.173" Width="300" SizeToContent="Width" Topmost="True" ShowInTaskbar="False" ResizeMode="NoResize">
     <Grid x:Name="MainGrid">
         <Label HorizontalContentAlignment="Center" HorizontalAlignment="Center" Margin="0,10,0,20" Content="Click the link below to get your authentication code" VerticalAlignment="Top" />

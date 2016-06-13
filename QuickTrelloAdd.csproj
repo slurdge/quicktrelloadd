@@ -7,8 +7,8 @@
     <ProjectGuid>{C36B7926-F76C-4342-82E2-491160DF3F8E}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>QuickTrelloAdd</RootNamespace>
-    <AssemblyName>QuickTrelloAdd</AssemblyName>
+    <RootNamespace>AddToTrello</RootNamespace>
+    <AssemblyName>AddToTrello</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -73,6 +73,7 @@
   <PropertyGroup>
     <AssemblyOriginatorKeyFile>QuickTrelloAdd_TemporaryKey.pfx</AssemblyOriginatorKeyFile>
   </PropertyGroup>
+  <PropertyGroup />
   <ItemGroup>
     <Reference Include="FirstFloor.ModernUI, Version=1.0.9.0, Culture=neutral, PublicKeyToken=bc9b0c37bf06c6a9, processorArchitecture=MSIL">
       <HintPath>packages\ModernUI.WPF.1.0.9\lib\net45\FirstFloor.ModernUI.dll</HintPath>
@@ -96,10 +97,6 @@
     </Reference>
     <Reference Include="Manatee.Trello.RestSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=783b036be1eaf5a7, processorArchitecture=MSIL">
       <HintPath>packages\Manatee.Trello.RestSharp.1.2.1\lib\net45\Manatee.Trello.RestSharp.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="NHotkey, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">

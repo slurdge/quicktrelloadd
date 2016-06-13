@@ -14,7 +14,7 @@ using System.Windows.Shapes;
 using System.Windows.Navigation;
 using System.ComponentModel;
 
-namespace QuickTrelloAdd
+namespace AddToTrello
 {
     /// <summary>
     /// Interaction logic for OptionWindow.xaml

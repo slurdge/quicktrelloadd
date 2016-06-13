@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace QuickTrelloAdd.Properties {
+namespace AddToTrello.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]

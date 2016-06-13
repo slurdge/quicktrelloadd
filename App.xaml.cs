@@ -10,7 +10,7 @@ using NHotkey.Wpf;
 using Manatee.Trello;
 using Manatee.Trello.ManateeJson;
 
-namespace QuickTrelloAdd
+namespace AddToTrello
 {
     /// <summary>
     /// Interaction logic for App.xaml
@@ -33,20 +33,20 @@ namespace QuickTrelloAdd
 
         protected bool showOptionWindow()
         {
-            var uri = getAuthURL(QuickTrelloAdd.Properties.Resources.API_KEY, App.ResourceAssembly.GetName().Name);
+            var uri = getAuthURL(AddToTrello.Properties.Resources.API_KEY, App.ResourceAssembly.GetName().Name);
 
             var authform = new OptionWindow();
-            authform.AuthToken = QuickTrelloAdd.Properties.Settings.Default.TrelloAuthToken;
-            authform.KeyboardShortcut = QuickTrelloAdd.Properties.Settings.Default.KeyboardShortcut;
+            authform.AuthToken = AddToTrello.Properties.Settings.Default.TrelloAuthToken;
+            authform.KeyboardShortcut = AddToTrello.Properties.Settings.Default.KeyboardShortcut;
             authform.AuthURI = uri.ToString();
             authform.ShowDialog();
             if (authform.DialogResult == false || authform.AuthToken == null || authform.AuthToken.Trim() == "")
             {
                 return false;
             }
-            QuickTrelloAdd.Properties.Settings.Default.KeyboardShortcut = authform.KeyboardShortcut;
-            QuickTrelloAdd.Properties.Settings.Default.TrelloAuthToken = authform.AuthToken.Trim();
-            QuickTrelloAdd.Properties.Settings.Default.Save();
+            AddToTrello.Properties.Settings.Default.KeyboardShortcut = authform.KeyboardShortcut;
+            AddToTrello.Properties.Settings.Default.TrelloAuthToken = authform.AuthToken.Trim();
+            AddToTrello.Properties.Settings.Default.Save();
 
             return true;
         }
@@ -59,7 +59,7 @@ namespace QuickTrelloAdd
             TrelloConfiguration.JsonFactory = new ManateeFactory();
             TrelloConfiguration.RestClientProvider = new Manatee.Trello.RestSharp.RestSharpClientProvider();
 
-            if (QuickTrelloAdd.Properties.Settings.Default.TrelloAuthToken == "")
+            if (AddToTrello.Properties.Settings.Default.TrelloAuthToken == "")
             {
                 if (!showOptionWindow())
                 {
@@ -67,11 +67,11 @@ namespace QuickTrelloAdd
                     return;
                 }
             }
-            TrelloAuthorization.Default.AppKey = QuickTrelloAdd.Properties.Resources.API_KEY;
-            TrelloAuthorization.Default.UserToken = QuickTrelloAdd.Properties.Settings.Default.TrelloAuthToken;
+            TrelloAuthorization.Default.AppKey = AddToTrello.Properties.Resources.API_KEY;
+            TrelloAuthorization.Default.UserToken = AddToTrello.Properties.Settings.Default.TrelloAuthToken;
 
             notifyIcon = new System.Windows.Forms.NotifyIcon();
-            notifyIcon.Icon = QuickTrelloAdd.Properties.Resources.trello_mark_blue;
+            notifyIcon.Icon = AddToTrello.Properties.Resources.trello_mark_blue;
             notifyIcon.Visible = true;
             List<System.Windows.Forms.MenuItem> items = new List<System.Windows.Forms.MenuItem>();
 
@@ -81,7 +81,7 @@ namespace QuickTrelloAdd
             {
                 var mi = new System.Windows.Forms.MenuItem(board.Name, new EventHandler(onBoardClick));
                 mi.Tag = board;
-                if (board.Id == QuickTrelloAdd.Properties.Settings.Default.BoardId)
+                if (board.Id == AddToTrello.Properties.Settings.Default.BoardId)
                 {
                     currentBoard = board;
                     mi.Checked = true;
@@ -105,7 +105,7 @@ namespace QuickTrelloAdd
 
         private void registerHotkey()
         {
-            var stringkeys = QuickTrelloAdd.Properties.Settings.Default.KeyboardShortcut.Split('+');
+            var stringkeys = AddToTrello.Properties.Settings.Default.KeyboardShortcut.Split('+');
             System.Windows.Input.ModifierKeys mod = System.Windows.Input.ModifierKeys.None;
             System.Windows.Input.Key key = System.Windows.Input.Key.None;
             foreach (var stringkey in stringkeys)
@@ -146,8 +146,8 @@ namespace QuickTrelloAdd
                 else
                     menuItem.Checked = false;
             }
-            QuickTrelloAdd.Properties.Settings.Default.BoardId = currentBoard.Id;
-            QuickTrelloAdd.Properties.Settings.Default.Save();
+            AddToTrello.Properties.Settings.Default.BoardId = currentBoard.Id;
+            AddToTrello.Properties.Settings.Default.Save();
         }
 
         private void showMainTrello(object sender, EventArgs e)

@@ -1,4 +1,4 @@
-﻿namespace QuickTrelloAdd.Properties {
+﻿namespace AddToTrello.Properties {
     
     
     // This class allows you to handle specific events on the settings class:
