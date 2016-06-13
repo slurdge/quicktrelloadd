@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickTrelloAdd", "QuickTrelloAdd.csproj", "{C36B7926-F76C-4342-82E2-491160DF3F8E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddToTrello", "AddToTrello.csproj", "{C36B7926-F76C-4342-82E2-491160DF3F8E}"
 EndProject
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{A8BD9DCF-5F96-4F0B-827A-45217446D539}"
 EndProject

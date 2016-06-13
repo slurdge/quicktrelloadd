@@ -33,12 +33,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_10D56894B24D081DD11950F96F9F4A6C"
-        "OwnerKey" = "8:_2322C418392D413388B387834A58BB30"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_22216CC3C2830CEB46EEDAFACB880981"
         "OwnerKey" = "8:_2322C418392D413388B387834A58BB30"
         "MsmSig" = "8:_UNDEFINED"
@@ -119,12 +113,6 @@
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_2322C418392D413388B387834A58BB30"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_10D56894B24D081DD11950F96F9F4A6C"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -290,37 +278,6 @@
                     }
                 }
             "SourcePath" = "8:Manatee.Trello.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_7C2CFCD4BF2A4193A8E9A28BAD758281"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_10D56894B24D081DD11950F96F9F4A6C"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_10D56894B24D081DD11950F96F9F4A6C"
-                    {
-                    "Name" = "8:Newtonsoft.Json.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:Newtonsoft.Json.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_7C2CFCD4BF2A4193A8E9A28BAD758281"
@@ -652,22 +609,22 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:QuickTrelloAdd"
-        "ProductCode" = "8:{2A50F602-5002-4C25-AD6F-50F52BD7B44A}"
-        "PackageCode" = "8:{764DDBC1-340C-43F8-BD08-EBA2076F891D}"
+        "ProductName" = "8:Add to Trello"
+        "ProductCode" = "8:{DDD6928B-80AB-4F72-BF91-2D6927FBAD4A}"
+        "PackageCode" = "8:{FB92AE7D-DAE3-4F76-A060-B5B451B2CE83}"
         "UpgradeCode" = "8:{6DC3A571-8956-443A-AFAC-7A26F0273095}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.0.2"
-        "Manufacturer" = "8:QuickTrelloAdd"
+        "ProductVersion" = "8:1.2.0"
+        "Manufacturer" = "8:Aurélien Pocheville"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
-        "Title" = "8:QuickTrelloAdd-Setup"
+        "Title" = "8:AddToTrello-Setup"
         "Subject" = "8:"
-        "ARPCONTACT" = "8:Slurdge"
+        "ARPCONTACT" = "8:Aurélien Pocheville aka Slurdge <slurdge@slurdge.org>"
         "Keywords" = "8:"
         "ARPCOMMENTS" = "8:"
         "ARPURLINFOABOUT" = "8:"
@@ -776,7 +733,7 @@
         {
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_18F8E5939EBF477887BB788ED8EF38C7"
             {
-            "Name" = "8:QuickTrelloAdd"
+            "Name" = "8:Add to Trello"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
@@ -790,7 +747,7 @@
             }
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_DE9290EF454D4ADA86AE16519D8ACF69"
             {
-            "Name" = "8:QuickTrelloAdd"
+            "Name" = "8:Add to Trello"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
@@ -1203,7 +1160,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_2322C418392D413388B387834A58BB30"
             {
-            "SourcePath" = "8:..\\obj\\Release\\QuickTrelloAdd.exe"
+            "SourcePath" = "8:..\\obj\\Release\\AddToTrello.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_7C2CFCD4BF2A4193A8E9A28BAD758281"
