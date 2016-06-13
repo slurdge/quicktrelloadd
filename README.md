@@ -1,8 +1,10 @@
-QuickTrelloAdd
-==============
+AddToTrello (Windows)
+=====================
 
-QuickTrelloAdd, as its name implies, is a way to quickly add tasks to Trello.
-You can see it a simpler way to use Trello on Windows without requiring a browser window open.
+What is it?
+-----------
+AddToTrello is a Microsoft Windows application to add tasks to your Trello Board without requiring launching the browser.
+Its simple and fast operation mode allows to reduce the time needed to add a task to a minimum.
 
 You can download the [latest release (setup.msi)](https://github.com/slurdge/quicktrelloadd/releases/latest/)
 
@@ -10,10 +12,16 @@ You can see it in action in the following screenshot
 
 ![Screenshot of main window](https://raw.githubusercontent.com/slurdge/quicktrelloadd/master/img/screenshot.png)
 
-It is built on top of Trello.NET with WPF.
-There are two main uses:
+It is built on top of Manatee.Trello with WPF.
+
+How to use
+----------
+
+After installation, first launch will require you to authorize the application with Trello. Simply click the link and paste the authorization token inside the window.
+
+There are two main ways to use AddToTrello:
 * From tray icon, where you can select your "default" board to add tasks to.
-* From keyboard shortcut (Ctrl+Alt+KeypadPlus)
+* From keyboard shortcut (by default Ctrl+Alt+KeypadPlus)
 
 The task will always be put on the bottom of first list of selected board.
 
@@ -23,7 +31,5 @@ Contributing
 ------------
 
 Pull requests are welcome.
-
-Particulary, if you know your ways around WPF, the tags buttons need rework.
 Please send email to slurdge@slurdge.org for any requests.
 
